@@ -7,6 +7,7 @@ function Home() {
 
   const options = {
     smooth: true,
+    smoothMobile: true
   } 
   
   return (
@@ -15,7 +16,7 @@ function Home() {
         <section className="first container-fluid">
             <h1 data-scroll
             data-scroll-direction="horizontal"
-            data-scroll-speed="9">Heading</h1>
+            data-scroll-speed="12">Heading</h1>
         </section>
         <section className="second container-fluid">
             <h2 data-scroll
