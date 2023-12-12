@@ -1,7 +1,7 @@
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
-import '../../assets/Locomotive.css'
-import './Home.css'
+import '../assets/locomotive.css'
+import '../Styles/Home.css'
 
 function Home() {
   const ref = useRef(null);
