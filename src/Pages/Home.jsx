@@ -35,7 +35,7 @@ function Home() {
         <img src={CoverHome} alt="" srcset=""  className="coverimghome"/>
               <h1 data-scroll
               data-scroll-direction="horizontal"
-              data-scroll-speed="5"
+              data-scroll-speed="2"
               className="text-light texthome">Parallax</h1>
 
         </div>
@@ -46,7 +46,7 @@ function Home() {
             data-scroll-speed="9">Second</h2>
         </section>
         <section className="third container-fluid">
-            <h3>three</h3>
+            <h3>Third</h3>
         </section>
       </main>
     </LocomotiveScrollProvider>
