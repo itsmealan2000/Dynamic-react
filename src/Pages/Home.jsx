@@ -8,15 +8,19 @@ function Home() {
   const options = {
     smooth: true,
   } 
-
+  
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>
       <main data-scroll-container ref={ref}>
         <section className="first container-fluid">
-            <h1>Heading</h1>
+            <h1 data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="9">Heading</h1>
         </section>
         <section className="second container-fluid">
-            <h2>Second</h2>
+            <h2 data-scroll
+            data-scroll-direction="vertical"
+            data-scroll-speed="9">Second</h2>
         </section>
         <section className="third container-fluid">
             <h3>three</h3>
