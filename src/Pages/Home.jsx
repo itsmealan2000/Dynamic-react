@@ -8,15 +8,15 @@ function Home() {
   const options = {
     smooth: true,
     smoothMobile: true,
-    touchMultiplier: 2,
+    touchMultiplier: 5,
     mobile: {
       breakpoint: 0,
-      smooth: false,
+      smooth: true,
       getDirection: true,
     },
     tablet: {
       breakpoint: 0,
-      smooth: false,
+      smooth: true,
       getDirection: true,
     },
   } 
