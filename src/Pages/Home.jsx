@@ -7,8 +7,21 @@ function Home() {
 
   const options = {
     smooth: true,
-    smoothMobile: true
+    smoothMobile: true,
+    touchMultiplier: 2,
+    mobile: {
+      breakpoint: 0,
+      smooth: false,
+      getDirection: true,
+    },
+    tablet: {
+      breakpoint: 0,
+      smooth: false,
+      getDirection: true,
+    },
   } 
+
+
   
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>

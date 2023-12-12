@@ -1,0 +1,13 @@
+.navlogo{
+    width: 40%;
+}
+@media (max-width:535px) {
+    .navlogo{
+        width: 70%;
+    }
+}
+@media (max-width:376px) {
+    .navlogo{
+        width: 100%;
+    }
+}
