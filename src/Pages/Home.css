@@ -28,7 +28,9 @@
 
 }
 .texthome{
-    font-size: 13rem;
+    position: absolute;
+    top: 15%;
+    font-size: 11rem;
 }
 .coverimghome{
     position: absolute;
@@ -42,14 +44,23 @@
     .coverimghome{
         width: 200%;
     }
+    .texthome{
+        font-size: 7rem;
+    }
 }
 @media (max-width:426px) {
     .coverimghome{
         width: 320%;
     }
+    .texthome{
+        font-size: 6rem;
+    }
 }
 @media (max-width:376px) {
     .coverimghome{
         width: 400%;
+    }
+    .texthome{
+        font-size: 5rem;
     }
 }
