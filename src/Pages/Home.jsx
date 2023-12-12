@@ -2,6 +2,10 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
 import './Home.css'
 
+// img imports
+import homeimg from '../assets/img/home.jpg'
+import CoverHome from '../assets/cover/home.png'
+
 function Home() {
   const ref = useRef(null);
 
@@ -27,9 +31,14 @@ function Home() {
     <LocomotiveScrollProvider options={options} containerRef={ref}>
       <main data-scroll-container ref={ref}>
         <section className="first container-fluid">
-            <h1 data-scroll
-            data-scroll-direction="horizontal"
-            data-scroll-speed="12">Heading</h1>
+        <div className="container first-inner">
+        <img src={CoverHome} alt="" srcset=""  className="coverimghome"/>
+              <h1 data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-speed="5"
+              className="text-light texthome">Parallax</h1>
+
+        </div>
         </section>
         <section className="second container-fluid">
             <h2 data-scroll

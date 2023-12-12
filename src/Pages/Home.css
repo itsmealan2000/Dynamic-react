@@ -3,7 +3,12 @@
     background-color: aquamarine;
     display: flex;
     justify-content: center;
-    align-items: center;
+    background-image: url('../assets/img/home.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 .second{
     height: 100vh;
@@ -15,4 +20,36 @@
 .third{
     height: 100vh;
     background-color: burlywood;
+}
+.first-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.texthome{
+    font-size: 13rem;
+}
+.coverimghome{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+
+/* mobile Screens and tab */
+@media (max-width:768px) {
+    .coverimghome{
+        width: 200%;
+    }
+}
+@media (max-width:426px) {
+    .coverimghome{
+        width: 320%;
+    }
+}
+@media (max-width:376px) {
+    .coverimghome{
+        width: 400%;
+    }
 }
