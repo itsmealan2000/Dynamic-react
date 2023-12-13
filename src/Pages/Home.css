@@ -9,17 +9,44 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    transform: translateZ(0);
+
 }
 .second{
     height: 100vh;
-    background-color: rebeccapurple;
+    background-image: url('../assets/img/second.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+    transform: translateZ(0);
+
 }
 .third{
-    height: 100vh;
-    background-color: burlywood;
+    height: 150vh;
+    background-image: url('../assets/img/thord.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translateZ(0);
+}
+.end{
+    font-size: 12rem;
+    position: absolute;
+    top: 30%;
+    color: white;
+	mix-blend-mode: exclusion;
 }
 .first-inner{
     display: flex;
@@ -30,13 +57,14 @@
 .texthome{
     position: absolute;
     top: 15%;
-    font-size: 11rem;
-    background-color: aqua;
+    font-size: 9rem;
+    justify-content: center;
 }
 .coverimghome{
     position: absolute;
     z-index: 1;
-    width: 100%;
+    width: 150%;
+    transform: translateZ(0);
 }
 
 
@@ -51,10 +79,14 @@
 }
 @media (max-width:426px) {
     .coverimghome{
-        width: 430%;
+        width: 500%;
     }
     .texthome{
         font-size: 6rem;
+        margin-left: 100px;
+    }
+    .third{
+        height: 120vh;
     }
 }
 @media (max-width:376px) {
